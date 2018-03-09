@@ -1,0 +1,9 @@
+---
+applications:
+- name: <INITIALS>-api
+  path: api
+  services:
+    - <INITIALS>-db
+
+- name: <INITIALS>-frontend
+  path: frontend

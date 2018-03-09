@@ -1,0 +1,6 @@
+flask==0.12.2
+flask-login==0.4.1
+flask-wtf==0.12
+flask-bootstrap==3.3.7.1
+flask-nav==0.6
+requests==2.18.4

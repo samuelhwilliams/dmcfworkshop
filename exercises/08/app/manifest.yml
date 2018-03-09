@@ -1,0 +1,10 @@
+---
+applications:
+  - name: <INITIALS>-app
+    instances: 1
+    memory: 64M
+    disk_quota: 256M
+    buildpack: python_buildpack
+    health-check-type: http
+    health-check-http-endpoint: /_stauts
+    command: FLASK_APP=run.py flask run --host 0.0.0.0 --port $PORT

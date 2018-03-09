@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% import "bootstrap/utils.html" as utils %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+<div class="container">
+  {% with messages = get_flashed_messages(with_categories=True) %}
+  {% if messages %}
+  <div class="row">
+    <div class="col-md-12">
+      {{ utils.flashed_messages(messages) }}
+    </div>
+  </div>
+  {% endif %}
+  {% endwith %}
+  
+  <div class="jumbotron">
+    <h1>Your very own app</h1>
+    <p>Please login.</p>
+  </div>
+  
+  {{ wtf.quick_form(form) }}
+  
+</div>
+{% endblock %}
